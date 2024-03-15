@@ -1,5 +1,5 @@
 
-import 'package:blood_donation_app/donor_details.dart';
+import 'package:blood_donation_app/doners_details.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 

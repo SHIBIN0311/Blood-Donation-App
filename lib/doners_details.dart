@@ -1,4 +1,4 @@
-import 'package:blood_donation_app/donor_registration.dart';
+import 'package:blood_donation_app/doners_registration.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -20,9 +20,7 @@ class _DonorDetailsState extends State<DonorDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Doner Details",
-        style: TextStyle(color: Colors.white),),
-        backgroundColor: Colors.red,
+        title: const Text("Doners Details"),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
@@ -66,11 +64,10 @@ class _DonorDetailsState extends State<DonorDetails> {
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
                               child: CircleAvatar(
-                                backgroundColor: Colors.red,
                                 radius: 30,
                                 child: Text(
                                   donerSnap["bloodgroup"],
-                                  style: const TextStyle(fontSize: 30),
+                                  style: const TextStyle(fontSize: 25),
                                 ),
                               ),
                             ),

@@ -1,5 +1,5 @@
-import 'package:blood_donation_app/donor_registration.dart';
-import 'package:blood_donation_app/receiver_registration.dart';
+import 'package:blood_donation_app/doners_list.dart';
+import 'package:blood_donation_app/doners_registration.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationUi extends StatelessWidget {
@@ -31,18 +31,17 @@ class RegistrationUi extends StatelessWidget {
                       builder: (context) => const DonorRegistration()),
                 );
               },
-              child: const Text('DONOR'),
+              child: const Text('REGISTER AS DONOR'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const ReceiverRegistration()),
+                  MaterialPageRoute(builder: (context) => const DonersList()),
                 );
               },
-              child: const Text('RECEIVER'),
+              child: const Text('VIEW DONERS LIST'),
             ),
           ],
         ),

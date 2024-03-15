@@ -100,10 +100,7 @@ class _EditingPageState extends State<EditingPage> {
                     height: 20,
                   ),
                   ElevatedButton(
-                    onPressed: () {
-                      setState(() {
-                        selectedgroup = selectedgroup;
-                      });
+                    onPressed: () {                     
                       updateDoner(docId);
                     },
                     style: ButtonStyle(
